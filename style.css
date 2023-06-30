@@ -15,77 +15,157 @@
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
-
-body {
-  background-color: var(--DarkSlateGrey);
-}
-img {
-  margin: 1.2rem;
-  border-radius: 0;
-}
-.ContLeftSite {
-  justify-content: center;
-  margin: 0 3rem;
-}
-h1 {
-  color: var(--DarkSlateGrey);
-  font-size: 48px;
-  margin-top: 5rem;
-}
-p {
-  color: var(--DarkSlateGrey);
-  display: flex;
+.attribution {
+  display: none; /* ------------*/
 }
 
-li::marker {
-  margin-left: 15px;
+@media screen and (min-width: 900px) {
+  img {
+    margin: 1.2rem;
+    border-radius: 0;
+  }
+  body {
+    background-color: var(--DarkSlateGrey);
+  }
+
+  .ContLeftSite {
+    justify-content: center;
+    margin: 0 3rem;
+  }
+  h1 {
+    color: var(--DarkSlateGrey);
+    font-size: 48px;
+    margin-top: 5rem;
+  }
+  p {
+    color: var(--DarkSlateGrey);
+    display: flex;
+  }
+
+  li::marker {
+    margin-left: 15px;
+  }
+
+  li {
+    list-style-image: url(/assets/images/icon-list.svg);
+    padding: 0.4rem 0.3rem;
+  }
+  .container {
+    background-color: var(--White);
+    width: 54rem;
+    height: 37rem;
+    border-radius: 2rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    display: flex;
+    justify-content: space-between;
+  }
+  button {
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    padding: 0 2rem;
+    border-radius: 8px;
+    height: 3rem;
+    width: 100%;
+  }
+  button:hover {
+    background: linear-gradient(90deg, #ff576e 36%, #f1773e 100%);
+    border-color: #ffffff00;
+  }
+  input {
+    padding: 15px;
+    border: 1px solid var(--Grey);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--DarkSlateGrey);
+    margin-top: 0.3rem 0;
+  }
+  #emailfield {
+    margin: 1rem 0;
+  }
+  span {
+    margin: 0;
+    padding: 0;
+    color: var(--DarkSlateGrey);
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .mobilview {
+    display: none;
+  }
 }
 
-li {
-  list-style-image: url(/assets/images/icon-list.svg);
-  padding: 0.4rem 0.3rem;
-}
-.container {
-  background-color: var(--White);
-  width: 54rem;
-  height: 37rem;
-  border-radius: 2rem;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 30%);
-  display: flex;
-  justify-content: space-between;
-}
-button {
-  background-color: var(--DarkSlateGrey);
-  color: var(--White);
-  padding: 0 2rem;
-  border-radius: 8px;
-  height: 3rem;
-  width: 100%;
-}
-button:hover {
-  background: linear-gradient(90deg, #ff576e 36%, #f1773e 100%);
-  border-color: #ffffff00;
-}
-input {
-  padding: 15px;
-  border: 1px solid var(--Grey);
-  border-radius: 3px;
-  margin-bottom: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  color: var(--DarkSlateGrey);
-  margin-top: 0.3rem;
-}
-#emailfield {
-  margin: 1rem 0;
-}
-span {
-  margin: 0;
-  padding: 0;
-  color: var(--DarkSlateGrey);
-  font-weight: bold;
-  font-size: 0.8rem;
+@media screen and (max-width: 875px) {
+  .container {
+    display: none;
+  }
+  img {
+    width: 100vw;
+    img {
+      margin: 1.2rem;
+      border-radius: 0;
+      max-height: 450px;
+    }
+  }
+  h1 {
+    font-size: 38px;
+    margin: 1.5rem 0;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .mobileContainer {
+    margin: 0 2rem;
+  }
+  p {
+    margin: 1rem 0;
+  }
+  li {
+    list-style-image: url(/assets/images/icon-list.svg);
+    margin-bottom: 1.3rem;
+  }
+  input {
+    padding: 15px;
+    border: 1px solid var(--Grey);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: var(--DarkSlateGrey);
+    margin: 0.3rem 0;
+  }
+  #emailfield {
+    margin-top: 3rem;
+  }
+  span {
+    margin: 0;
+    padding: 0;
+    color: var(--DarkSlateGrey);
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  button {
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    padding: 0 2rem;
+    border-radius: 8px;
+    height: 3.5rem;
+    width: 100%;
+    margin: 1.5rem 0;
+    border: none;
+  }
+  button:hover {
+    background: linear-gradient(90deg, #ff576e 36%, #f1773e 100%);
+    border-color: #ffffff00;
+  }
+  #space {
+    margin: 0 30px;
+    font-weight: normal;
+    font-size: 16px;
+  }
 }

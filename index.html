@@ -15,23 +15,12 @@
 
   <title>Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <div class="container">
     <div>
-      <!-- Sign-up form start -->
       <div class="ContLeftSite">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -44,21 +33,26 @@
         </div>
         <button type="submit">Subscribe to monthly newsletter</button>
       </div>
-
-
-
-
-
-
-
-
-
-
-      <!-- Sign-up form end -->
     </div>
     <img src="/assets/images/illustration-sign-up-desktop.svg" alt="" srcset="">
 
 
+  </div>
+  <div class="mobilview">
+    <img src="/assets/images/illustration-sign-up-mobile.svg" alt="" srcset="">
+    <div class="mobileContainer">
+
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <li>Product discovery and building what <span id="space">matters</span> </li>
+      <li>Measuring to ensure updates are a <span id="space">success</span> </li>
+      <li>And much more!</li>
+      <div id="emailfield">
+        <span>Email address</span>
+        <input type="email" placeholder="email@company.com">
+      </div>
+      <button type="submit">Subscribe to monthly newsletter</button>
+    </div>
   </div>
 
   <div class="attribution">
@@ -71,9 +65,6 @@
 
 
 <!--
-  
-
-  <!-- Success message start -->
 
 Thanks for subscribing!
 
@@ -82,5 +73,4 @@ Please open it and click the button inside to confirm your subscription.
 
 Dismiss message
 
-<!-- Success message end -->
 -->
