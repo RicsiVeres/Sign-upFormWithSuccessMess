@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,63 +12,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Newsletter sign-up form with success message</title>
-
-
 </head>
 
 <body>
-  <div class="container">
-    <div>
-      <div class="ContLeftSite">
-        <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <li>Product discovery and building what matters</li>
-        <li>Measuring to ensure updates are a success</li>
-        <li>And much more!</li>
-        <div id="emailfield">
-          <span>Email address</span>
-          <input type="email" placeholder="email@company.com">
-        </div>
-        <button type="submit">Subscribe to monthly newsletter</button>
-      </div>
-    </div>
-    <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" srcset="">
-
-
-  </div>
-  <div class="mobilview">
-    <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" srcset="">
-    <div class="mobileContainer">
-
-      <h1>Stay updated!</h1>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <li>Product discovery and building what <span id="space">matters</span> </li>
-      <li>Measuring to ensure updates are a <span id="space">success</span> </li>
-      <li>And much more!</li>
-      <div id="emailfield">
-        <span>Email address</span>
-        <input type="email" placeholder="email@company.com">
-      </div>
-      <button type="submit">Subscribe to monthly newsletter</button>
-    </div>
-  </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>
-
-
-<!--
-
-Thanks for subscribing!
-
-A confirmation email has been sent to ash@loremcompany.com.
-Please open it and click the button inside to confirm your subscription.
-
-Dismiss message
-
--->
